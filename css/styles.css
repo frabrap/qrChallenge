@@ -1,0 +1,108 @@
+/*body {
+     font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color:  hsl(216, 2%, 54%) 
+}
+
+h1 {
+
+}*/
+
+.big-square {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: hsl(212, 45%, 89%);
+    padding-top: 10px;
+}
+
+.blue-square {
+    background-color: hsl(219, 54%, 58%);
+    border:solid hsl(219, 61%, 56%);
+    margin: 50px auto 50px auto;
+    border-radius: 20px;
+}
+
+.qr-square {
+    border: 0 solid #462921;
+    width: 580px; 
+    margin: auto ;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(29, 20px);
+    grid-template-rows: repeat(29, 20px);
+    grid-auto-flow: row;
+    background-color: yellow;
+    position: relative;
+}
+
+.container-square-top-left {
+    border: 0 solid #462921;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(7, 20px);
+    grid-template-rows: repeat(7, 20px);
+    grid-auto-flow: row;
+    position:absolute;
+    top: 0;
+       /* Margin top  - right - bottom - left */
+    
+}
+
+.container-square-top-right {
+    border: 0 solid #462921;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(7, 20px);
+    grid-template-rows: repeat(7, 20px);
+    grid-auto-flow: row;
+    position:absolute;
+    right: 0;
+}
+
+
+.container-square-bottom-left {
+    border: 0 solid #462921;
+    position:absolute;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(7, 20px);
+    grid-template-rows: repeat(7, 20px);
+    grid-auto-flow: row;
+    position: absolute;
+    bottom: 0px;
+}
+
+.box {  /* square on the QR  */
+    background-color: white;
+    /* border: 0.5px solid #000 ;*/
+    text-align: center;
+}
+
+
+.box:nth-child(n+9):nth-child(-n+13), /* selects all items from 10 to 15 */
+.box:nth-child(n+15):nth-child(-7n+30), /* selects all items from 17 to 42, reduce 8 position */
+.box:nth-child(n+20):nth-child(-7n+34), /* selects all items from 16 to 50, reduce 8 position*/
+.box:nth-child(n+37):nth-child(-n+41) {  /* elects all items from 50 to 55  */
+    background-color: #3743af;
+    /* color: #fff1f1;
+ */  } 
+
+/* 
+.box:nth-child(29) ~ div:nth-child(-16n+50),
+.box:nth-child(9) ~ div:nth-child(-2n+16), 
+.box:nth-child(17) ~ div:nth-child(-2n+25), 
+.box:nth-child(25) ~ div:nth-child(-2n+32), 
+.box:nth-child(33) ~ div:nth-child(-2n+41), 
+.box:nth-child(41) ~ div:nth-child(-2n+48), 
+.box:nth-child(49) ~ div:nth-child(-2n+57), 
+.box:nth-child(57) ~ div:nth-child(-2n+64){
+  background-color: #441a03;
+  color: #fff;
+} */
+
+.text-description {
+    margin:auto;
+    color:hsl(212, 45%, 89%);
+    width: 80%;
+   
+}
